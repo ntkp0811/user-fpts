@@ -25,32 +25,5 @@ export default async function createUser(req: Request, res: Response) {
         res.json({ message: "success", data: user });
       }
     )
-
-    // Check empty
-    // req.body.email,
-    // E.fromPredicate(
-    //   (str) => str.trim().length > 0,
-    //   () => "EmptyEmail"
-    // ),
-    // flow(validateEmail)(req.body.email),
-
-    // Email
-    // req.body.email
-    // req.body,
-
-    // validateNumber,
-    // E.fold(
-    //   () => {
-    //     BadRequest(res, "Not a valid number");
-    //   },
-    //   async (id) => {
-    //     const user = await userRepository.findOneBy({ id: parseInt(id) });
-    //     if (user) {
-    //       res.json(user);
-    //     } else {
-    //       BadRequest(res, "Invalid id user");
-    //     }
-    //   }
-    // )
   );
 }
